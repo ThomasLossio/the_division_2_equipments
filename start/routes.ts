@@ -30,3 +30,7 @@ Route.get('health', async ({ response }) => {
 
   return report.healthy ? response.ok(report) : response.badRequest(report)
 })
+
+Route.post('users', () => {
+  return { message: 'Ok' }
+})

@@ -11,9 +11,6 @@ test.group('Sign Up', () => {
     }
 
     const user = await UserFactory.merge(userPayload).makeStubbed()
-    const response = await supertest(BASE_URL).post('/users').send(user)
-
-    console.log(user)
-    assert.exists(response)
+    await supertest(BASE_URL).post('/users').send(user).expect(200)
   })
 })
