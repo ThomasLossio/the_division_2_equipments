@@ -7,6 +7,7 @@ export const UserFactory = Factory
       nickname: faker.internet.userName(),
       email: faker.internet.email(),
       password: faker.internet.password(),
+      remember_me_token: ''
     }
   })
   .build()
