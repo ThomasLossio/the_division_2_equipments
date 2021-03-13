@@ -9,13 +9,13 @@ export default class User extends BaseModel {
   @column()
   public email: string
 
-  @column()
+  @column({ serializeAs: null })
   public password: string
 
   @column()
   public nickname: string
 
-  @column()
+  @column({ serializeAs: null })
   public remember_me_token: string
 
   @column.dateTime({ autoCreate: true })
