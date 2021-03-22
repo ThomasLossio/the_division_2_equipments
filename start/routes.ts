@@ -32,3 +32,5 @@ Route.get('health', async ({ response }) => {
 })
 
 Route.post('sessions', 'SessionController.store')
+
+Route.post('users', 'UsersController.store')
